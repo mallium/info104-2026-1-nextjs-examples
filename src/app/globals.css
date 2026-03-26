@@ -1,42 +1,55 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  font-size : 24px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #FFFFF0;
+  padding: 25px 50px 30px 50px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.principal {
+  padding: 10px;
+  background-color: #FFFFAA;
+}
+.bloque{
+  border: 1px solid #FF0000;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+a{
+  color: #e8c64d;
+}
+a:hover{
+  color: #e8954d;
+}
+a:visited{
+  color: #999999;
+}
+.passenger{
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  min-height: 36px;
+  height: 36px;
+}
+.passengerEven{
+  background-color: #FFFFF0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.passengerOdd{
+  background-color: #F5F5E5;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.passengerNumber{
+  flex: 7;
+  text-align: center;
+  font-size: 0.7em;
+  align-content: center;
+}
+.passengerName{
+  flex: 83;
+  align-content: center;
+}
+.passengerDeath{
+  flex: 10;
+  text-align: center;
+  align-content: center;
+  font-family: serif;
+  font-size: 1.5em;
 }
