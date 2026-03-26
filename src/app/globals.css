@@ -53,3 +53,10 @@ a:visited{
   font-family: serif;
   font-size: 1.5em;
 }
+
+.seleccionado{
+  background-color: #FFF5F5;
+}
+.passenger:hover {
+  cursor: pointer; /* Changes the cursor to a hand icon */
+}
