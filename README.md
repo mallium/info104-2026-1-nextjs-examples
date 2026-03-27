@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
-First, first, clone this repo in the parent folder you want the project to be created. Once it's cloned, enter the project folder 
+*First, first*, clone this repo in the parent folder you want the project to be created. Once it's cloned, enter the project folder 
 
 First, run the development server:
 
