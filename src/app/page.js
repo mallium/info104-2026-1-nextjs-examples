@@ -4,9 +4,11 @@ import titanic from "./data/titanic.json";
 import Passenger from "./components/passenger";
 export default function Home() {
   const [seleccionados, setSeleccionados] = useState(0);
-  const handlePassengerSelectChange = (select) => {
-    if (select) setSeleccionados(seleccionados + 1);
-    else setSeleccionados(Math.max(seleccionados - 1, 0));
+  const handlePassengerSelectChange = (select, pid) => {
+    if (select) {
+      setSeleccionados(seleccionados + 1);
+      console.log(pid);
+    } else setSeleccionados(Math.max(seleccionados - 1, 0));
   };
 
   let nSurvived = 0;
