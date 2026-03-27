@@ -1,11 +1,22 @@
-const Passenger = ({ dataPassenger, i, className }) => {
+"use client";
+import { useState, useEffect } from "react";
+
+const Passenger = ({ dataPassenger, i, className, handleSeleccionado }) => {
+  const [seleccionado, setSeleccionado] = useState(false);
+
   const handleOnClick = (e) => {
-    console.log("handle click! (" + e.clientX + "," + e.clientY + ")");
+    setSeleccionado(!seleccionado);
   };
+
+  useEffect(() => {
+    handleSeleccionado(seleccionado);
+  }, [seleccionado]);
 
   return (
     <div
-      className={"passenger " + className}
+      className={
+        "passenger " + className + " " + (seleccionado ? "seleccionado" : "")
+      }
       key={dataPassenger.PassengerId}
       onClick={handleOnClick}
     >

@@ -55,7 +55,7 @@ a:visited{
 }
 
 .seleccionado{
-  background-color: #FFF5F5;
+  background-color: #FFE0E0;
 }
 .passenger:hover {
   cursor: pointer; /* Changes the cursor to a hand icon */
