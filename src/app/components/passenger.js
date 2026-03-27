@@ -1,23 +1,13 @@
-import { useState, useEffect } from "react";
-
-const Passenger = ({ dataPassenger, i, className, handleSelect }) => {
-  const [seleccionado, setSeleccionado] = useState(false);
-
-  const handleOnClick = (pid, e) => {
-    setSeleccionado(!seleccionado);
+const Passenger = ({ dataPassenger, i, className }) => {
+  const handleOnClick = (e) => {
+    console.log("handle click! (" + e.clientX + "," + e.clientY + ")");
   };
-
-  useEffect(() => {
-    handleSelect(seleccionado, dataPassenger.Ticket);
-  }, [seleccionado]);
 
   return (
     <div
-      className={
-        "passenger " + className + (seleccionado ? " seleccionado" : "")
-      }
+      className={"passenger " + className}
       key={dataPassenger.PassengerId}
-      onClick={(e) => handleOnClick(dataPassenger.PassengerId, e)}
+      onClick={handleOnClick}
     >
       <div className="passengerNumber">{i + 1}</div>
       <div className="passengerName">{dataPassenger.Name}</div>
